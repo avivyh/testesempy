@@ -1,3 +1,7 @@
+#  Created by avivyh on 25/05/22.
+#  Copyright © 2022  avivyh. All rights reserved.
+
+
 #soma
 n=4+4
 print('Soma 4+4:')

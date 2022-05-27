@@ -1,7 +1,19 @@
+#  Created by avivyh on 27/05/22.
+#  Copyright © 2022  avivyh. All rights reserved.
+
+
 #dicionários em python
 """
 Os dicionários são construídos com o uso de chaves e virgulas separando cada elemento do dicionário
 dict = {k1:v1, k2: v2, ... kn:vn}
+
+Mapeamentos são uma coleção de objetos que são armazenados por uma chave 
+
+Um dicionário consiste em uma chave e em seguida um valor associado 
+Esse valor pode ser quase qualquer objeto python
+
+Podemos dizer que dicionários são mapeamentos de chaves e valores 
+
 
 """
 #criando lista

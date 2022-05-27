@@ -1,3 +1,7 @@
+#  Created by avivyh on 27/05/22.
+#  Copyright © 2022  avivyh. All rights reserved.
+
+
 #strings
 #indexação em py começa com 0
 #Python utiliza aspas siples ou duplas para strings

@@ -1,3 +1,7 @@
+#  Created by avivyh on 26/05/22.
+#  Copyright © 2022  avivyh. All rights reserved.
+
+
 #criando variavel
 variavel = 1
 print(variavel)

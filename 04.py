@@ -1,3 +1,7 @@
+#  Created by avivyh on 27/05/22.
+#  Copyright © 2022  avivyh. All rights reserved.
+
+
 #Listas em python
 """
 Listas são consideradas a visão geral de
