@@ -1,3 +1,9 @@
+#  Created by avivyh on 31/05/22.
+#  Copyright © 2022  avivyh. All rights reserved.
+
+
+
+
 import cv2
 import numpy as np
 
@@ -8,3 +14,4 @@ cv2.namedWindow('Exibindo Imagem!')
 cv2.imshow('Exibindo Imagem!', img)
 
 cv2.waitKey()
+
