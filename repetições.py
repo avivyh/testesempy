@@ -119,3 +119,95 @@ while(exp1):
 
 '''
 
+#usando while para imprimir de 0 a 9
+cont = 0
+while ( cont < 10):
+    print(cont)
+    cont+=1
+print("\n")
+
+
+# é possível usar else com while em python
+x = 0
+while x<10:
+    print('A váriavel está no loop\n')
+    x+=1
+else:
+    print('Loop encerrado!\n')
+
+
+#pass, break e continue
+cont = 0
+while (cont<100):
+    if (cont == 4):
+        #break interrompe o while
+        break
+    else:
+        pass
+        #continua seguindo a execução dentro do while
+    print(cont)
+    cont += 1
+print('\n')
+
+for i in 'python':
+    if (i == 'h'):
+        #usado para pular uma iteração
+        continue
+    print(i)
+print('')
+
+
+#while e for juntos
+#imprimindo numeros primos no intervalo de 2 a 50
+for i in range(2, 50):
+    j = 2
+    cont = 0
+    while j<i:
+        if i % j == 0:
+            cont = 1
+            j = j + 1
+        else:
+            j = j + 1
+    if cont == 0:
+        print(str(i) + ' é um número primo')
+        cont = 0
+    else:
+        cont = 0
+print("")
+
+
+"""
+Função Range
+
+essa função nos permite criar uma lista de números em um intervalo especifíco
+range([start], [stop], [step]) - 
+start - número que inicia a sequencia
+stop - número que encerra a sequencia (não é inserido na sequencia)
+step - diferença entre cada número da sequencia
+
+"""
+
+#imprimindo números pares entre 50 e 100
+for i in range(50, 101, 2):
+    print(i)
+print('')
+
+#se não tiver o terceiro elemento, o padrão será 1 em 1
+for i in range(3, 6):
+    print(i)
+print('')
+
+#também é possível saltar p trás
+for i in range(0, -20, -2):
+    print(i)
+print('')
+
+
+#usando for quando vc tem uma sequencia e não sabe o tamanho fixo
+lista = ['banana', 'morango', 'abacaxi', 'uva']
+ListaTamanho = len(lista)
+for i in range(0, ListaTamanho):
+    print(lista[i])
+print('')
+
+
