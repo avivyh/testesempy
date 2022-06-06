@@ -211,3 +211,19 @@ for i in range(0, ListaTamanho):
 print('')
 
 
+
+#imprimindo todas as strings menos uma
+nome = 'Luan Santana'
+for i in nome:
+    if( i == ' '):
+        continue
+    print(i)
+print('')
+
+
+
+#imprimindo numeros impares
+for i in range(0, 101):
+    if(i % 2 != 0):
+        print(i)
+print('')
