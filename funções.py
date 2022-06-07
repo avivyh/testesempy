@@ -55,3 +55,9 @@ def SomarNúmeros(firstnum, secondnum):
 #chamando função e passando parmetros
 SomarNúmeros(1, 2)
 print('')
+
+def FunçãoAté10():
+    for i in range(0, 11):
+        print(i)
+
+FunçãoAté10()
