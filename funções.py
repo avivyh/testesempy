@@ -61,3 +61,49 @@ def FunçãoAté10():
         print(i)
 
 FunçãoAté10()
+print('')
+def TesteFunção():
+    for i in range(10, 21):
+        print(i)
+TesteFunção()
+print('')
+
+
+"""
+Váriaveis de dentro de funções são variaveis LOCAIS
+
+estudar python para não criar funções que já existem
+
+"""
+
+#converter entrada de dados para o tipo inteiro
+idade = int(input('Digite sua idade:'))
+if idade > 13:
+    print('Você pode usar o facebook!')
+print('')
+
+#convertendo string para valor inteiro
+print(int('26'))
+
+#convertendo string para valor float
+print(float('23.44'))
+
+#convertendo int para string
+print(str(27))
+print('')
+
+#função para verificar o comprimento de um objeto
+lista = [21, 22, 23, 34, 35]
+print(len(lista))
+print('')
+
+array = ['a', 'b', 'c']
+#varificando o valor maximo do array
+print(max(array))
+#verificando valor minimo do array
+print(min(array))
+print('')
+
+#função sum para somar o conteúdo da lista
+print(sum(lista))
+print('')
