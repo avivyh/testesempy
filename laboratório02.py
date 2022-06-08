@@ -13,6 +13,7 @@ print('')
 #chamando a função anonima lambda para solucionar as operações e imprimindo o resultado
 if(operação == 1):
     result = lambda x, y: x+y
+    #ps: sempre passar os argumentos da variavel que vai receber o valor de lambda!!!
     print(x, '+', y, '=', result(x, y))
 elif(operação == 2):
     result = lambda x, y: x-y
