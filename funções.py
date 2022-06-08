@@ -107,3 +107,51 @@ print('')
 #função sum para somar o conteúdo da lista
 print(sum(lista))
 print('')
+
+#importando o pacote de matematica
+#pacote é um conjunto de funções similares, por exemplo, o pacote math possui varias funções matematicas
+import math
+def NumPrimo(num):
+    '''Verificando se um número é primo'''
+    if (num % 2 == 0) and (num > 2):
+        return 'Este número não é primo.'
+    for i in range(3, int(math.sqrt(num))+ 1, 2):
+        if(num % i == 0):
+            return 'Este número não é primo.'
+    return 'Este número é primo.'
+print(NumPrimo(542))
+
+#criando função para fazer fatiamento 
+def SplitString(texto):
+    return texto.split(' ')
+texto = 'Essa função será bastante útil para separar grandes volumes de dados!'
+#isso vai dividir o texto em uma lista sempre que encontrar a variavel passada na função
+print(SplitString(texto))
+
+#gravando o resultado da função em uma variavel
+var = SplitString(texto)
+print(var)
+print('')
+
+str = 'EU AMO ESTUDAR PYTHON!'
+def ConverterString(string):
+    #essa função vai converter a string para minuscula
+    return string.lower()
+var = ConverterString(str)
+print(var)
+print('')
+
+
+#criando função com um número variado de argumentos, ou seja, podem variar a quantidades de argumentos
+#a cada chamada, o segundo argumento significa que será passado UM CONJUNTO DE PARAMETROS
+def PrintVarInfo(arg1, *vartuple):
+    #imprimindo primeiro argumento
+    print('O parametro passado foi: ', arg1)
+    #imprimindo valores do segundo argumento
+    for item in vartuple:
+        print('O parametro passado foi: ', item)
+    return
+#chamando apenas um argumento
+PrintVarInfo(10)
+#chamando vários argumentos
+PrintVarInfo('Chocolate', 'Morango', 'Uva')
