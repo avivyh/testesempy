@@ -155,3 +155,84 @@ def PrintVarInfo(arg1, *vartuple):
 PrintVarInfo(10)
 #chamando vários argumentos
 PrintVarInfo('Chocolate', 'Morango', 'Uva')
+
+
+
+'''
+Expressões lambda nos permitem criar expressões anonimas.
+isso significa que podemos fazer rapidamente funções ad-hoc sem a necessidade 
+de definir uma função usando a palavra reservada def 
+
+principais diferenças: 
+- o corpo do lambda é uma única expressão, não um bloco de instruções
+- o corpo do lambda é semelhante a uma instrução de retorno do corpo def
+    funções lambda realmente são úteis quando utilizadas em conjunto com as funções
+    map(), filter(), reduce()
+    expressões lambdas também são  usadas para criar funções simples
+    são também chamadas funções in-line ou apenas funções anonimas
+    ex:
+    lambda x: x**2
+    (palavra reservada lambda, o primeiro x representa o parametro de entrada e a expressão 
+    após os dois pontos é o retorno da função)
+
+    DIFERENÇAS ENTRE DEF E LAMBDA:
+    def -> cria um objeto e atribui um nome a ele
+    lambda -> cria um objeto mas o retorna como um resultado em tempo de execução
+
+'''
+
+#definindo função def - 3 linhas de código
+def Potencia(num):
+    result = num**2
+    return result 
+
+print(Potencia(5))
+print('')
+
+#definindo função def - 2 linhas de código
+def Potencia(num):
+    return num**2
+
+print(Potencia(5))
+print('')
+
+#definindo função def - 1 linha de código
+def Potencia(num): return num**2
+
+print('next')
+
+
+#definindo expressão lambda
+#potencia é a váriavel que recebe
+#lambda é a expressão, num é o argumento
+#após os dois pontos é a expressão que vai ser retornada da função lambda
+potencia = lambda num: num**2
+print(potencia(5))
+print("")
+
+
+#foi obtido o mesmo resultado, lambda é uma função anonima, sem nome. Em vez de criar nome p função, pode-se criar
+#uma variável
+#lembre: operadores de comparação retornam booleanas: true ou false 
+Par = lambda num: num % 2 == 0
+print(Par(3))
+print(Par(4))
+print(Par(5))
+print('')
+
+#passando variável str para lambdda e retornando o primeiro elemento da string
+#nomevariavel, exp lambda e argumento, retorno
+first = lambda s: s[0]
+#imprimindo na tela o retorno da função, passando uma string
+print(first('Python'))
+print('')
+
+#revertendo a string
+Reverso = lambda s: s[::-1]
+print(Reverso('Python'))
+print('')
+
+#criando função lambda com mais de um parametro
+Soma = lambda x, y: x+y
+print(Soma(10, 20))
+print('')
