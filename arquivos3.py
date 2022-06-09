@@ -1,7 +1,7 @@
 #  Created by avivyh on 09/06/22.
 #  Copyright © 2022  avivyh. All rights reserved.
 
-
+'''MANIPULAÇÃO DE ARQUIVOS'''
 #importando pandas que é um conjunto de um pacote para analise de dados
 import pandas as pd
 #passando nome do arquivo para variavel filename
