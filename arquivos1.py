@@ -1,3 +1,6 @@
+#  Created by avivyh on 09/06/22.
+#  Copyright © 2022  avivyh. All rights reserved.
+
 ''' 
 Arquivos
 

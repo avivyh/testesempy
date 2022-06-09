@@ -1,3 +1,6 @@
+#  Created by avivyh on 08/06/22.
+#  Copyright © 2022  avivyh. All rights reserved.
+
 #imprimindo o menu para o usuário
 print('*********************************** PYTHON CALCULADORA ***********************************\n')
 print('Selecione o número da operação desejada:\n')

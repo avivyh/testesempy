@@ -1,3 +1,6 @@
+#  Created by avivyh on 09/06/22.
+#  Copyright © 2022  avivyh. All rights reserved.
+
 #solicitando ao usuario o nome do arquivo
 FileName = input('Digite o nome do arquivo:')
 #concatenando texto
