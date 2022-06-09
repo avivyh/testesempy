@@ -42,7 +42,7 @@ f.close()
 
 #contando as linhas de um arquivo
 #abrindo arquivo no modo leitura
-f = open('teste.txt', 'r')
+f = open('salarios.csv', 'r')
 #passando conteudo do arquivo para variável
 data = f.read()
 #passando para a variavel rows o fateamento do arquivo toda vez que é encontrada uma quebra de linha
@@ -64,3 +64,23 @@ for row in lista:
 #printando a quantidade de quebras de linhas encontradas (no caso, a quantidade de frases)
 print(cont)
 print("")
+#fechando arquivo
+f.close()
+
+#abrindo arquivo para leitura
+arq = open('salarios.csv', 'r')
+#lendo e imprimindo o conteudo do arquivo
+print(arq.read())
+print('')
+#o cursor foi pro fim do arquivo, ou seja, não vai encontrar mais nada p ler no arquivo, se
+#tentar ler novamente não vai aparecer nada pois estamos na ultima posição do arquivo!
+#para conseguir ler novamente, precisamos apontar para o inicio do arquivo
+arq.seek(0, 0)
+#lendo o arquivo linha a linha
+print(arq.readlines())
+print('')
+#podemos usar o loop for para percorrer cada linha de um arquivo
+#variavel, abrir arquivo, nome do arquivo
+for linha in open('salarios.csv'):
+    print(linha)
+print('')
