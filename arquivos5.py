@@ -36,3 +36,46 @@ print('')
 #acessando valor no dicionário a partir da chave 
 print(data['nome'])
 print('')
+
+#imprimindo um arquivo json copiado da internet
+from urllib.request import urlopen
+
+#a variavel response recebe a função urlopen, passa o link como parametro
+#é feito o read e depois o decode para utf8
+response = urlopen('http://vimeo.com/api/v2/video/57733101.json').read().decode('utf8')
+#gravando o conteudo do objeto response no objeto data
+#a função loads é para carregar o conteudo
+data = json.loads(response)[0]
+print('Título:', data['title'])
+print('URL: ', data['url'])
+print('Duração: ', data['duration'])
+print('Número de visualizações: ', data['stats_number_of_plays'])
+print('')
+
+
+#copiando o conteúdo de um arquivo para o outro
+#importando pacote os
+import os
+arquivoFonte = 'dados.json'
+arquivoDestino = 'jsondata.txt'
+
+#método 1:
+#abrir um arquivo e automaticamente copiar o conteudo para o outro arquivo
+with open(arquivoFonte, 'r') as infile:
+    #variavel texto recebe a leitura do arquivo
+    texto = infile.read()
+    #abrindo arquivo de destino para escrita
+    with open(arquivoDestino, 'w') as outfile:
+        outfile.write(texto)
+
+#método 2:
+#abre o arquivo de destino para escrita
+#abrindo arquivo fonte para leitura
+open(arquivoDestino, 'w').write(open(arquivoFonte, 'r').read())
+
+#leitura de arquivos json
+with open('jsondata.txt', 'r') as arquivo:
+    texto = arquivo.read()
+    data = json.loads(texto)
+
+print(data)
