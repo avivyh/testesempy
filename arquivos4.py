@@ -38,4 +38,3 @@ print(dados)
 #imprimindo a partir da segunda linha 
 for linha in dados[:1]:
     print(linha)
-
