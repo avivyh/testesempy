@@ -73,3 +73,46 @@ def trocaValores(d1, d2):
         #no fim, retornamos o dicionário temporário
     return dicTemp
 print(trocaValores(d1, d2))
+print('\n\n')
+
+print('ENUMERATE:\n')
+#função enumerate
+#criando uma lista
+seq = ['a', 'b', 'c']
+#a função mostra um indice e o elemento
+print(list(enumerate(seq)))
+print('')
+
+#imprimindo os vcalores de uma lista com a função enumerate e
+# seus respectivos indices 
+for indice, valor in enumerate(seq):
+    print(indice, valor)
+print('')
+
+#percorrendo os elementos e seus indices, se o indice for
+#maior ou igual a dois, sai do loop
+for indice, valor in enumerate(seq):
+    if indice >= 2:
+        break
+    else:
+        print(valor)
+print('')
+
+#criando lista de strings 
+lista = ['Marketing', 'Tecnologia', 'Business']
+
+#imprimindo valores da lista
+for i, item in enumerate(lista):
+    print(i, item)
+print('')
+
+#imprimindo o indice e o elemento dos numeros de 1 a 10
+for i, item in enumerate(range(10)):
+    print(i, item)
+print('')
+
+#imprimindo o indice e cada elemento de um conjunto de caracteres
+for i, item in enumerate('Isso é uma string!'):
+    print(i, item)
+print('')
+
