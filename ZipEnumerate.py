@@ -115,4 +115,3 @@ print('')
 for i, item in enumerate('Isso é uma string!'):
     print(i, item)
 print('')
-
