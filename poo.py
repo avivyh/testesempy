@@ -45,7 +45,4 @@ POLIMORFISMO    - as classes derivadas de uma unica classe base são capazes de 
                         (os mesmos atributos e metodos podem ser usados em objetos distintos, porém com implementações lógicas diferentes.)
 ENCAPSULAMENTO  - é a tecnica que faz com que detalhes internos do funcionamento dos metodos de uma classe permaneçam ocultos para os objetos.
 
-
-
-
 '''
