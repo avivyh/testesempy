@@ -1,3 +1,9 @@
+#  Created by avivyh on 28/06/22.
+#  Copyright © 2022  avivyh. All rights reserved.
+#aulas da disciplina Programação orientada a objetos na UFPI
+
+
+
 '''print('primeira aula!')
 a = float(input('Digite um lado: '))
 b = float(input('Digite um lado: '))
