@@ -1,3 +1,66 @@
+'''print('primeira aula!')
+a = float(input('Digite um lado: '))
+b = float(input('Digite um lado: '))
+c = float(input('Digite um lado: '))
+
+if(a > (b+c)) or (b > (a+c)) or (c > (a+b)):
+    print('Não é um triangulo!')
+else:
+    if a==b and b==c: 
+        print('Equilatero!')
+    elif a != b and b != c:
+        print('Escaleno!')
+    else: 
+        print('Isoceles!')'''
+
+'''cont = 0
+while cont< 10:
+    print('Dentro do while!')
+    cont+=1'''
+
+'''#programa que escreve de 0 até 40. para multiplos de 4 ou 10
+#escreva PIN na tela, quando for o ultimo numero escreva FIM
+i = 0
+while (i<41):
+    if ((i % 4 == 0) or (i % 10 == 0)) and (i != 40):
+        print('PIN')
+    elif(i == 40):
+        print('FIM')
+    else:
+        print(i)
+    i+=1'''
+
+'''for i in range(0, 41):
+    if(i % 4 == 0 or i % 10 == 0) and (i != 40):
+        print('PIN')
+    elif(i == 40):
+        print('FIM')
+    else:
+        print(i)'''
+
+'''print('')
+
+lista = [1, 2, 3, 4, 5, 6, 'Picos', 'Teresina']
+for i in lista:
+    print(i)
+print('')'''
+
+
+'''for i in range(0, 10):
+    print(i)
+print('')
+
+for i in range(1, 10):
+    for j in range(1, 10):
+        print(i, '*', j, '=', i * j)
+    print('')'''
+
+'''try:
+    print(10/0)
+except:
+    print('Caiu no erro')'''
+
+
 '''def Temp(f):
     #função para transformar graus farenheit em celsius  
     C = (5 * (f - 32)/9)
