@@ -154,7 +154,7 @@ while(inicio <= fim):
     print(tab, '*', inicio, '=', tab*inicio)
     inicio += 1'''
 
-'''quant = int(input('Digite a quantidade de numeros:'))
+quant = int(input('Digite a quantidade de numeros:'))
 i = 0
 one = 0
 two = 1
@@ -169,5 +169,4 @@ while( i < quant-2):
     print(soma)
     one = two
     two = soma
-    i+=1'''
-
+    i+=1
